@@ -1,2 +1,61 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+@import url();
+
+html , body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.theme-dark {
+    --bg-top-image:0 0 url(./images/bg-desktop-dark.jpg) no-repeat;
+    --main-bg: hsl (235, 21%, 11%);
+    --todo-bg: hsl (235, 24%, 19%);
+    --todo-shadow: hsl (235, 21%, 11%);
+    --font-color hsl: (234, 9%, 85%);
+    --font-color-hover : #fff;
+}
+
+.theme-light {
+    --bg-top-image:0 0 url(./images/bg-desktop-light.jpg) no-repeat;
+    --main-bg: hsl(0, 0%, 98%);
+    --todo-bg: hsl(0, 0%, 98%);
+    --todo-shadow: hsl(0, 19%, 35%);
+    --font-color: hsl(236, 9%, 61%);
+    --font-color-hover: hsl(235, 21%, 11%);
+}
+
+body{
+    font:400 18px/1 "josefin sans", sans-serf;
+    background-color: var(--bg-top-image);
+    background-color: var(--main-bg);
+    background-size: contain;
+    color: var(--font-color);
+}
+
+header, main{
+    max-width: 545px;
+    margin: 0 auto;
+}
+
+header{
+    justify-content: space-between;
+    padding: 52px 0 11px;
+
+}
