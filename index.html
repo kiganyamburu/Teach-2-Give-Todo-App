@@ -9,9 +9,41 @@
   <title>Frontend Mentor | Todo app</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body classs="theme-dark">
+   <header class="flex-row">
+    <h1>ToDO</h1>
+    <div class="theme-block">
+      <input type="checkbox" name="theme" id="theme">
+      <label for="theme"></label>
+    </div>
+   </header>
 
-  Todo
+   <main>
+    <div class="add-new-item flex-row">
+      <span></span>
+        <input type="text" placeholder="create a new todo..." name="addItem">
+    </div>
+    <section class="content"></section>
+    <ul>
+      <li class="flex-row">
+        <label class="list-item">
+          <input type="checkbox" name="todoItem"checked>
+          <span class="checkmark"></span>
+          <span class="checkmark">Tex 1</span>
+          </label>
+          <span class="remoeve"></span>
+      </li>
+      <li class="flex-row"></li>
+      <label class="list-item">
+        <input type="checkbox" name="todoItem">
+        <span class="checkmark"></span>
+        <span class="text">Tex 2</span>
+      </label>
+    </ul>
+   </main>
+
+
+  <!-- Todo
 
   <!-- Add dynamic number --> items left
 
@@ -21,13 +53,13 @@
 
   Clear Completed
 
-  Drag and drop to reorder list
+  Drag and drop to reorder list -->
 <footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Peter Mburu</a>.
   </div>
 </footer>
-  
+  <script src="./script.js"></script>
 </body>
 </html>
